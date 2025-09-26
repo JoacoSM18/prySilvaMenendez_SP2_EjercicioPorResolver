@@ -35,7 +35,6 @@
             this.txtDias = new System.Windows.Forms.NumericUpDown();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.lblKilometros = new System.Windows.Forms.Label();
-            this.lblPrecio2 = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.txtDistancia = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -105,23 +104,14 @@
             this.lblKilometros.TabIndex = 6;
             this.lblKilometros.Text = "KM";
             // 
-            // lblPrecio2
-            // 
-            this.lblPrecio2.AutoSize = true;
-            this.lblPrecio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio2.Location = new System.Drawing.Point(132, 280);
-            this.lblPrecio2.Name = "lblPrecio2";
-            this.lblPrecio2.Size = new System.Drawing.Size(132, 20);
-            this.lblPrecio2.TabIndex = 7;
-            this.lblPrecio2.Text = "Precio del Boleto:";
-            // 
             // lblPrecio
             // 
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(290, 280);
+            this.lblPrecio.Location = new System.Drawing.Point(155, 279);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(78, 20);
+            this.lblPrecio.Size = new System.Drawing.Size(279, 20);
             this.lblPrecio.TabIndex = 8;
+            this.lblPrecio.Click += new System.EventHandler(this.lblPrecio_Click);
             // 
             // txtDistancia
             // 
@@ -151,7 +141,6 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtDistancia);
             this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblPrecio2);
             this.Controls.Add(this.lblKilometros);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtDias);
@@ -176,7 +165,6 @@
         private System.Windows.Forms.NumericUpDown txtDias;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label lblKilometros;
-        private System.Windows.Forms.Label lblPrecio2;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.TextBox txtDistancia;
         private System.Windows.Forms.Button btnLimpiar;

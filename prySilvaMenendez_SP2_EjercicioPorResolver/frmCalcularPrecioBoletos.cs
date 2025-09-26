@@ -40,7 +40,15 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
             }
 
             int precio = Distancia * 5;
-            lblPrecio.Text = precio.ToString();
+            if (Dias > 7 && Distancia > 100)
+            {
+                precio = (int)(precio * 0.5);
+                lblPrecio.Text = "El Precio Final Es De: $" + precio.ToString();
+            }
+            else
+            {
+                lblPrecio.Text = "El Precio Final Es De: $" + precio.ToString();
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -68,6 +76,11 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
             {
                 e.Handled = true;
             }
+        }
+
+        private void lblPrecio_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
