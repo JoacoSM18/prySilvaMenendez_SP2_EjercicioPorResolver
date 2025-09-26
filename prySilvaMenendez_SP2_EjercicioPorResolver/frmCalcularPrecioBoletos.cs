@@ -23,19 +23,19 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
 
             if (!int.TryParse(txtDistancia.Text.Trim(), out Distancia))
             {
-                MessageBox.Show("Por favor, ingresa un número válido en el campo de Distancia.");
+                MessageBox.Show("Por favor, Ingrese un Número Válido");
                 return;
             }
 
             if (!int.TryParse(txtDias.Text.Trim(), out Dias))
             {
-                MessageBox.Show("Por favor, ingresa un número válido en el campo de Días.");
+                MessageBox.Show("Por favor, Ingrese un Número Válido");
                 return;
             }
 
             if (Distancia <= 0 || Dias <= 0)
             {
-                MessageBox.Show("Por favor, asegúrate de que ambos valores sean mayores a cero.");
+                MessageBox.Show("Por Favor, Ingrese Valores Mayores a 0");
                 return;
             }
 
@@ -45,7 +45,29 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            txtDistancia.Text = "";
+            txtDias.Text = "";
+            lblPrecio.Text = "";
+            txtDistancia.Text = "0";
+            txtDias.Text = "0";
+            lblPrecio.Text = "0";
+            txtDistancia.Focus();
+        }
 
+        private void txtDistancia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDias_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
