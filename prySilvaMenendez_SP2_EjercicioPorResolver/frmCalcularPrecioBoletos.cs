@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prySilvaMenendez_SP2_EjercicioPorResolver
 {
-    public partial class Form1 : Form
+    public partial class frmCalcularPrecioBoletos : Form
     {
-        public Form1()
+        public frmCalcularPrecioBoletos()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace prySilvaMenendez_SP2_EjercicioPorResolver
 {
-    partial class Form1
+    partial class frmCalcularPrecioBoletos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmCalcularPrecioBoletos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.ForestGreen;
+            this.ClientSize = new System.Drawing.Size(591, 457);
+            this.Name = "frmCalcularPrecioBoletos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Calcular Precio de Boletos - Empresa \"Ferro\"";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
