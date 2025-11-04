@@ -45,9 +45,10 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(131, 42);
+            this.lblTitulo.Location = new System.Drawing.Point(128, 23);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(303, 26);
+            this.lblTitulo.Size = new System.Drawing.Size(441, 37);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Calcule el Precio de su Boleto";
             // 
@@ -55,9 +56,10 @@
             // 
             this.lblDistancia.AutoSize = true;
             this.lblDistancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistancia.Location = new System.Drawing.Point(48, 104);
+            this.lblDistancia.Location = new System.Drawing.Point(13, 112);
+            this.lblDistancia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDistancia.Name = "lblDistancia";
-            this.lblDistancia.Size = new System.Drawing.Size(271, 20);
+            this.lblDistancia.Size = new System.Drawing.Size(404, 29);
             this.lblDistancia.TabIndex = 1;
             this.lblDistancia.Text = "Ingrese la Distancia Hasta el Destino";
             // 
@@ -65,31 +67,35 @@
             // 
             this.lblDias.AutoSize = true;
             this.lblDias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDias.Location = new System.Drawing.Point(48, 194);
+            this.lblDias.Location = new System.Drawing.Point(13, 182);
+            this.lblDias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDias.Name = "lblDias";
-            this.lblDias.Size = new System.Drawing.Size(293, 20);
+            this.lblDias.Size = new System.Drawing.Size(440, 29);
             this.lblDias.TabIndex = 2;
             this.lblDias.Text = "Ingrese la Cantidad de Dias de Estancia";
             // 
             // txtDias
             // 
-            this.txtDias.Location = new System.Drawing.Point(365, 194);
+            this.txtDias.Location = new System.Drawing.Point(502, 185);
+            this.txtDias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDias.Maximum = new decimal(new int[] {
             30,
             0,
             0,
             0});
             this.txtDias.Name = "txtDias";
-            this.txtDias.Size = new System.Drawing.Size(55, 20);
+            this.txtDias.Size = new System.Drawing.Size(82, 26);
             this.txtDias.TabIndex = 3;
             this.txtDias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDias_KeyPress);
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(347, 362);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCalcular.Location = new System.Drawing.Point(447, 359);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(142, 53);
+            this.btnCalcular.Size = new System.Drawing.Size(163, 47);
             this.btnCalcular.TabIndex = 5;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -98,35 +104,41 @@
             // lblKilometros
             // 
             this.lblKilometros.AutoSize = true;
-            this.lblKilometros.Location = new System.Drawing.Point(466, 107);
+            this.lblKilometros.Location = new System.Drawing.Point(658, 118);
+            this.lblKilometros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKilometros.Name = "lblKilometros";
-            this.lblKilometros.Size = new System.Drawing.Size(23, 13);
+            this.lblKilometros.Size = new System.Drawing.Size(32, 20);
             this.lblKilometros.TabIndex = 6;
             this.lblKilometros.Text = "KM";
             // 
             // lblPrecio
             // 
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(155, 279);
+            this.lblPrecio.Location = new System.Drawing.Point(130, 270);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(279, 20);
+            this.lblPrecio.Size = new System.Drawing.Size(439, 31);
             this.lblPrecio.TabIndex = 8;
+            this.lblPrecio.Visible = false;
             this.lblPrecio.Click += new System.EventHandler(this.lblPrecio_Click);
             // 
             // txtDistancia
             // 
-            this.txtDistancia.Location = new System.Drawing.Point(365, 104);
+            this.txtDistancia.Location = new System.Drawing.Point(502, 115);
+            this.txtDistancia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDistancia.Name = "txtDistancia";
-            this.txtDistancia.Size = new System.Drawing.Size(100, 20);
+            this.txtDistancia.Size = new System.Drawing.Size(148, 26);
             this.txtDistancia.TabIndex = 9;
             this.txtDistancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDistancia_KeyPress);
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(86, 362);
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Red;
+            this.btnLimpiar.Location = new System.Drawing.Point(100, 359);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(115, 53);
+            this.btnLimpiar.Size = new System.Drawing.Size(144, 47);
             this.btnLimpiar.TabIndex = 10;
             this.btnLimpiar.Text = "LIMPIAR";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -134,10 +146,10 @@
             // 
             // frmCalcularPrecioBoletos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(591, 457);
+            this.ClientSize = new System.Drawing.Size(738, 461);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtDistancia);
             this.Controls.Add(this.lblPrecio);
@@ -148,6 +160,7 @@
             this.Controls.Add(this.lblDistancia);
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmCalcularPrecioBoletos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calcular Precio de Boletos - Empresa \"Ferro\"";

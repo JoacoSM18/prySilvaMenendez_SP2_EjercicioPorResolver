@@ -20,16 +20,15 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             int Distancia, Dias;
-
             if (!int.TryParse(txtDistancia.Text.Trim(), out Distancia))
             {
-                MessageBox.Show("Por favor, Ingrese un Número Válido");
+                MessageBox.Show("Por Favor, Ingrese un Número Válido");
                 return;
             }
 
             if (!int.TryParse(txtDias.Text.Trim(), out Dias))
             {
-                MessageBox.Show("Por favor, Ingrese un Número Válido");
+                MessageBox.Show("Por Favor, Ingrese un Número Válido");
                 return;
             }
 
@@ -38,15 +37,16 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
                 MessageBox.Show("Por Favor, Ingrese Valores Mayores a 0");
                 return;
             }
-
             int precio = Distancia * 5;
             if (Dias > 7 && Distancia > 100)
             {
+                lblPrecio.Visible = true;
                 precio = (int)(precio * 0.5);
                 lblPrecio.Text = "El Precio Final Es De: $" + precio.ToString();
             }
             else
             {
+                lblPrecio.Visible = true;
                 lblPrecio.Text = "El Precio Final Es De: $" + precio.ToString();
             }
         }
@@ -59,6 +59,7 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
             txtDistancia.Text = "0";
             txtDias.Text = "0";
             lblPrecio.Text = "0";
+            lblPrecio.Visible = false;
             txtDistancia.Focus();
         }
 
