@@ -44,11 +44,11 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(128, 23);
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(143, 22);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(441, 37);
+            this.lblTitulo.Size = new System.Drawing.Size(471, 37);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Calcule el Precio de su Boleto";
             // 
@@ -92,7 +92,7 @@
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCalcular.Location = new System.Drawing.Point(447, 359);
+            this.btnCalcular.Location = new System.Drawing.Point(487, 359);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(163, 47);
@@ -135,7 +135,7 @@
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.Red;
-            this.btnLimpiar.Location = new System.Drawing.Point(100, 359);
+            this.btnLimpiar.Location = new System.Drawing.Point(98, 359);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(144, 47);
@@ -159,6 +159,7 @@
             this.Controls.Add(this.lblDias);
             this.Controls.Add(this.lblDistancia);
             this.Controls.Add(this.lblTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmCalcularPrecioBoletos";
