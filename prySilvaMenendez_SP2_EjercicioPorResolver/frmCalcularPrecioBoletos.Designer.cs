@@ -165,6 +165,7 @@
             this.Name = "frmCalcularPrecioBoletos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calcular Precio de Boletos - Empresa \"Ferro\"";
+            this.Load += new System.EventHandler(this.frmCalcularPrecioBoletos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtDias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

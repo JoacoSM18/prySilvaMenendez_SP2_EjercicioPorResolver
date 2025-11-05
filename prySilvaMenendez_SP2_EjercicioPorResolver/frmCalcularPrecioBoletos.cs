@@ -83,5 +83,10 @@ namespace prySilvaMenendez_SP2_EjercicioPorResolver
         {
 
         }
+
+        private void frmCalcularPrecioBoletos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
